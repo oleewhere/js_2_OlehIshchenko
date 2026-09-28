@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.user-card, .user-details-block, .post-card, .post-details-block, .comment-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.user-card, .post-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn, .nav-btn, .posts-btn {
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #e0e0e0;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.user-info {
+    margin-bottom: 15px;
+}
+
+.user-details-block {
+    margin-bottom: 20px;
+}
+
+.user-details-block h4 {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: #111;
+}
+
+.user-details-block p, .post-details-block p {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.posts-btn {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.post-details-block {
+    margin-bottom: 20px;
+}
+
+.comments-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
